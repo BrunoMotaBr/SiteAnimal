@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #FFA500;
+    color: #FFF;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-img{
+    width: 70px;
+    margin: 0 0.3em 0 0;
+}
+
+.logo-titulo-header{
+    display: flex;
+    align-items: center;
+}
+
+.menu-hamburguer-botao{
+    width: 10%;
+    height: 10%;
+    padding: 0.5em;
+    background-color: #d18903;
+    border-radius: 16px;
+}
+
+.menu-hamburguer{
+    background-color: #ce8601;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.principal{
+    background-color: #339966;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/1991621/pexels-photo-1991621.jpeg?cs=srgb&dl=cachoeira-natureza-paisagem-primavera-verde-1991621.jpg&fm=jpg);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+    padding: 3em 0;
+}
+
+.principal-imagem{
+    margin: 1em 0 0 0;
+    width: 100%;
+    height: 60vh;
+    display: none;
+}
+
+.ativo{
+    display: block;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 1em auto;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: #339966 5px solid;
+    margin: 1em 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #FFF;
+}
+
+.card-img{
+    width: 100px;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #FFA500;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0.3em;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul a{
+    color: #888;
+    text-decoration: none;
+}
+
+@media (min-width: 750px){
+    .principal{
+        width: 80%;
+        margin: 0 auto 1em auto;
+    }
+    .principal h2{
+        padding: 0 5em;
+    }
+    .principal p{
+        padding: 0 5em;
+    }
+    .principal img{
+        padding: 0 5em;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        margin: 1em 1em;
+    }
+    .menu-hamburguer-botao{
+        height: 5%;
+        width:5%;
+    }
+}
+@media (min-width: 1005px){
+
+}
